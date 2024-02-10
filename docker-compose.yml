@@ -1,0 +1,21 @@
+name: palworld-server-tool
+services:
+    palworld-server-tool-dev:
+        container_name: pstdev
+        ports:
+            - 8080:8080
+        deploy:
+            resources:
+                limits:
+                    memory: 256M
+        memswap_limit: 4G
+        volumes:
+            - /mnt/d/PalServer/Pal/Saved:/game
+        environment:
+            - WEB__PASSWORD=zvw9mqzze2ksv9Z
+            - RCON__ADDRESS=192.168.1.72:25575
+            - RCON__PASSWORD=zvw9mqzze2ksv9Z
+            - SAVE__PATH=/game
+            - SAVE__SYNC_INTERVAL=120
+        image: palworld-server-tool-dev
+        build: .
