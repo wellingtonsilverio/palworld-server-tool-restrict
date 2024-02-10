@@ -497,7 +497,7 @@ onMounted(async () => {
         </n-space>
       </n-space>
     </div>
-    <div class="w-full">
+    <div class="w-full" v-if="isLogin">
       <div class="rounded-lg" v-if="!loading && playerList.length > 0">
         <n-layout style="height: calc(100vh - 86px)" has-sider>
           <n-layout-header

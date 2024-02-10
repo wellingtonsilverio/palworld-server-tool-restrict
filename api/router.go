@@ -45,22 +45,22 @@ func RegisterRouter() *gin.Engine {
 	r.Use(Logger(), gin.Recovery())
 
 	r.POST("/api/login", loginHandler)
-	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	apiGroup := r.Group("/api")
 
 	anonymousGroup := apiGroup.Group("")
 	{
 		anonymousGroup.GET("/server", getServer)
-		anonymousGroup.GET("/player", listPlayers)
-		anonymousGroup.GET("/player/:player_uid", getPlayer)
-		anonymousGroup.GET("/guild", listGuilds)
-		anonymousGroup.GET("/guild/:admin_player_uid", getGuild)
 	}
 
 	authGroup := apiGroup.Group("")
 	authGroup.Use(auth.JWTAuthMiddleware())
 	{
+		authGroup.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+		authGroup.GET("/player", listPlayers)
+		authGroup.GET("/player/:player_uid", getPlayer)
+		authGroup.GET("/guild", listGuilds)
+		authGroup.GET("/guild/:admin_player_uid", getGuild)
 		authGroup.POST("/server/broadcast", publishBroadcast)
 		authGroup.POST("/server/shutdown", shutdownServer)
 		authGroup.PUT("/player", putPlayers)

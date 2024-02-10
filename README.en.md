@@ -156,7 +156,7 @@ mkdir -p pst && tar -xzf pst_v0.5.4_linux_x86_64.tar.gz -C pst
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:75 | Starting PalWorld Server Tool...
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:76 | Version: Develop
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:77 | Listening on http://127.0.0.1:8080 or http://192.168.1.66:8080
-2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/swagger/index.html
+2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/api/swagger/index.html
 ```
 
 For background operation (running after SSH window is closed):
@@ -244,7 +244,7 @@ Two ways to run on Windows:
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:75 | Starting PalWorld Server Tool...
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:76 | Version: Develop
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:77 | Listening on http://127.0.0.1:8080 or http://192.168.31.214:8080
-2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/swagger/index.html
+2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/api/swagger/index.html
 ```
 
 If you see the preceding interface, it indicates that the operation is successful. Keep the window open.

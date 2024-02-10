@@ -75,7 +75,7 @@ func main() {
 	logger.Info("Starting PalWorld Server Tool...\n")
 	logger.Infof("Version: %s\n", version)
 	logger.Infof("Listening on http://127.0.0.1:%d or http://%s:%d\n", viper.GetInt("web.port"), localIp, viper.GetInt("web.port"))
-	logger.Infof("Swagger on http://127.0.0.1:%d/swagger/index.html\n", viper.GetInt("web.port"))
+	logger.Infof("Swagger on http://127.0.0.1:%d/api/swagger/index.html\n", viper.GetInt("web.port"))
 
 	go task.Schedule(db)
 	defer task.Shutdown()

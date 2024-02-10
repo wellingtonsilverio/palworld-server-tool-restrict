@@ -176,7 +176,7 @@ mkdir -p pst && tar -xzf pst_v0.5.4_linux_x86_64.tar.gz -C pst
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:75 | Starting PalWorld Server Tool...
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:76 | Version: Develop
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:77 | Listening on http://127.0.0.1:8080 or http://192.168.1.66:8080
-2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/swagger/index.html
+2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/api/swagger/index.html
 ```
 
 若需要后台运行（关闭 ssh 窗口后仍运行）
@@ -264,7 +264,7 @@ manage: # 管理相关
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:75 | Starting PalWorld Server Tool...
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:76 | Version: Develop
 2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:77 | Listening on http://127.0.0.1:8080 or http://192.168.31.214:8080
-2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/swagger/index.html
+2024/01/31 - 22:39:20 | INFO | palworld-server-tool/main.go:78 | Swagger on http://127.0.0.1:8080/api/swagger/index.html
 ```
 
 看到上述界面表示成功运行，请保持窗口打开
